@@ -1,0 +1,6 @@
+{
+	"desc": "视频播放器组件",
+	"requireFormatName": "vdVideo",
+	"requireName": "vd/video",
+	"title": "视频播放器"
+}
