@@ -3,18 +3,18 @@
 ## 安装
 
 ```shell script
-vd plugin install https://github.com/ivde/video
+eco plugin install https://github.com/kjeco/video
 ```
 
 ## 卸载
 
 ```shell script
-vd plugin uninstall https://github.com/ivde/video
+eco plugin uninstall https://github.com/kjeco/video
 ```
 
 ## 组件
 
-### 组件 vd-video 事件
+### 组件 eco-video 事件
 
 | 属性 | 作用 |
 | --- | --- |
@@ -23,7 +23,7 @@ vd plugin uninstall https://github.com/ivde/video
 | onPause | 暂停播放 |
 | onCompletion | 播放完毕 |
 
-### 组件 vd-video 属性
+### 组件 eco-video 属性
 
 | 属性 | 作用 |
 | --- | --- |
@@ -32,7 +32,7 @@ vd plugin uninstall https://github.com/ivde/video
 | title | 标题 |
 | pos | 播放的初始位置（单位毫秒） |
 
-### 组件 vd-video 方法
+### 组件 eco-video 方法
 
 | 属性 | 作用 |
 | --- | --- |
@@ -50,7 +50,7 @@ vd plugin uninstall https://github.com/ivde/video
 <template>
     <div>
 
-        <vd-video ref="video" @onPlaying="start" img="logo.png" style="width:750px;height:400px;background-color: black" title="xxxxx" auto-play="false"   src="http://mp4.vjshi.com/2013-07-25/2013072519392517096.mp4"></vd-video>
+        <eco-video ref="video" @onPlaying="start" img="logo.png" style="width:750px;height:400px;background-color: black" title="xxxxx" auto-play="false"   src="http://mp4.vjshi.com/2013-07-25/2013072519392517096.mp4"></eco-video>
 
         <div style="flex: 1;align-items: center;justify-content: center">
             <text>{{text}}</text>
@@ -108,7 +108,7 @@ vd plugin uninstall https://github.com/ivde/video
 
 ### 引用模块
 ```js
-const video = app.requireModule("vd/video");
+const video = app.requireModule("eco/video");
 ```
 
 ### 获取视频时长

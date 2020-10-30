@@ -1,4 +1,4 @@
-package vd.android.videoView.component;
+package eco.android.videoView.component;
 
 import android.app.Activity;
 import android.content.Context;
@@ -27,12 +27,12 @@ import com.taobao.weex.ui.component.WXVContainer;
 import java.util.HashMap;
 import java.util.Map;
 
-import app.vd.framework.activity.PageActivity;
-import app.vd.framework.extend.integration.glide.Glide;
-import app.vd.framework.extend.module.vdConstants;
-import app.vd.framework.extend.module.vdPage;
-import vd.android.videoView.R;
-import vd.android.videoView.component.extend.TitleView;
+import app.eco.framework.activity.PageActivity;
+import app.eco.framework.extend.integration.glide.Glide;
+import app.eco.framework.extend.module.ecoConstants;
+import app.eco.framework.extend.module.ecoPage;
+import eco.android.videoView.R;
+import eco.android.videoView.component.extend.TitleView;
 
 public class AppvideoViewComponent extends WXVContainer<ViewGroup> {
 
@@ -61,8 +61,8 @@ public class AppvideoViewComponent extends WXVContainer<ViewGroup> {
         mView = ((Activity) getContext()).getLayoutInflater().inflate(R.layout.my_video_view, null);
         initPagerView();
         //
-        if (getEvents().contains(vdConstants.Event.READY)) {
-            fireEvent(vdConstants.Event.READY, null);
+        if (getEvents().contains(ecoConstants.Event.READY)) {
+            fireEvent(ecoConstants.Event.READY, null);
             if (mAutoPlay) {
                 mVideoView.start();
             }
@@ -200,7 +200,7 @@ public class AppvideoViewComponent extends WXVContainer<ViewGroup> {
 
     @WXComponentProp(name = "img")
     public void setImg(String url) {
-        url = vdPage.rewriteUrl(getContext(), url);
+        url = ecoPage.rewriteUrl(getContext(), url);
         Glide.with(getContext()).load(url).into(mImageView);
         mImageView.setVisibility(View.VISIBLE);
     }

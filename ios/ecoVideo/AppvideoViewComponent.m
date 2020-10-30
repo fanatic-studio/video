@@ -15,7 +15,7 @@
 @implementation AppvideoViewComponent
 @synthesize weexInstance;
 
-WX_PlUGIN_EXPORT_COMPONENT(vd-video, AppvideoViewComponent)
+WX_PlUGIN_EXPORT_COMPONENT(eco-video, AppvideoViewComponent)
 WX_EXPORT_METHOD(@selector(play))
 WX_EXPORT_METHOD(@selector(pause))
 WX_EXPORT_METHOD(@selector(seek:))

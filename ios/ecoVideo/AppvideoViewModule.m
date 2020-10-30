@@ -14,7 +14,7 @@
 
 @synthesize weexInstance;
 
-WX_PlUGIN_EXPORT_MODULE(vdVideo, AppvideoViewModule)
+WX_PlUGIN_EXPORT_MODULE(ecoVideo, AppvideoViewModule)
 WX_EXPORT_METHOD(@selector(getDuration:call:))
 
 -(void)getDuration:(NSString *)url call:(WXModuleCallback)call{

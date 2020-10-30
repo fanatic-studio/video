@@ -1,4 +1,4 @@
-package vd.android.videoView.entry;
+package eco.android.videoView.entry;
 
 import android.content.Context;
 
@@ -8,9 +8,9 @@ import com.dueeeke.videoplayer.player.VideoViewManager;
 import com.taobao.weex.WXSDKEngine;
 import com.taobao.weex.common.WXException;
 
-import app.vd.framework.extend.annotation.ModuleEntry;
-import vd.android.videoView.component.AppvideoViewComponent;
-import vd.android.videoView.module.AppvideoModule;
+import app.eco.framework.extend.annotation.ModuleEntry;
+import eco.android.videoView.component.AppvideoViewComponent;
+import eco.android.videoView.module.AppvideoModule;
 
 @ModuleEntry
 public class videoViewEntry {
@@ -24,8 +24,8 @@ public class videoViewEntry {
         VideoViewManager.setConfig(VideoViewConfig.newBuilder().setPlayerFactory(IjkPlayerFactory.create()).build());
 
         try {
-            WXSDKEngine.registerComponent("vd-video", AppvideoViewComponent.class);
-            WXSDKEngine.registerModule("vdVideo", AppvideoModule.class);
+            WXSDKEngine.registerComponent("eco-video", AppvideoViewComponent.class);
+            WXSDKEngine.registerModule("ecoVideo", AppvideoModule.class);
         } catch (WXException e) {
             e.printStackTrace();
         }

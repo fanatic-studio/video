@@ -1,4 +1,4 @@
-package vd.android.videoView.module;
+package eco.android.videoView.module;
 
 import android.os.Handler;
 import android.text.TextUtils;
@@ -11,7 +11,7 @@ import com.taobao.weex.common.WXModule;
 import java.util.HashMap;
 import java.util.Map;
 
-import app.vd.framework.extend.module.vdPage;
+import app.eco.framework.extend.module.ecoPage;
 
 public class AppvideoModule extends WXModule {
 
@@ -20,7 +20,7 @@ public class AppvideoModule extends WXModule {
         if (call == null) {
             return;
         }
-        url = vdPage.rewriteUrl(mWXSDKInstance, url);
+        url = ecoPage.rewriteUrl(mWXSDKInstance, url);
         Map<String, Object> data = new HashMap<>();
         data.put("url", url);
         data.put("status", "error");

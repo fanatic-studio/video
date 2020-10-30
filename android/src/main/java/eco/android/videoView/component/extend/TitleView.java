@@ -1,4 +1,4 @@
-package vd.android.videoView.component.extend;
+package eco.android.videoView.component.extend;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
